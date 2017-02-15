@@ -1,0 +1,165 @@
+table { width: 100% }
+/*th, td { border: 1px gray solid; text-align: center; padding: 3px }*/
+tr.header{ background: #C9BFED;}
+tr.record{ background: #EDEDED;}
+
+/*
+ * 전체 배경
+ */
+#top {
+	height: 42em;
+	text-align: center;
+	background-color: #AAAAAA;
+	background-image: url(img/bg.png);
+	color: #2E2E2E;
+	vertical-align: top;
+}
+
+#panel {
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+}
+
+/*
+ * 개설방 테이블
+ */
+table.boardlist { margin: 0; border-top: 1px solid #d3d4d8; border-bottom: 2px solid #868da0;}
+table.boardlist th { padding: 3px 3px 3px 3px; text-align: center; color: #484848; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 19px; border-left: 0px solid #c9cbce; border-bottom: 1px solid #868da0; }
+table.boardlist td { padding: 3px 3px 3px 3px; text-align: center; color: #505050; font-weight: normal; font-family: Arial, Helvetica, sans-serif; font-size: 14px; border-bottom: 1px solid #b1b1b1; overflow: hidden;}
+table.boardlist td.title { font-weight: bold; overflow: hidden; text-overflow: ellipsis; word-break: break-all;}
+
+/*
+ * 방만들기 버튼
+ */
+.css3button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 5;
+	width: 8em;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(top, #42aaff 0%, #003366);
+	background: -webkit-gradient(linear, left top, left bottom, from(#42aaff), to(#003366));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #003366;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 1px
+		rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		1px rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 1px
+		rgba(255, 255, 255, 0.5);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.7), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+	border: 0;
+	outline: 0;
+}
+
+.css3button:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	width: 8em;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(top, #003366 0%, #42aaff);
+	background: -webkit-gradient(linear, left top, left bottom, from(#003366), to(#42aaff));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #003366;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 1px
+		rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		1px rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 1px
+		rgba(255, 255, 255, 0.5);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.7), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+	/* The first rule is a fallback, in case the browser
+	   does not support multiple backgrounds
+	*/
+	background-position: top left;
+	background-position: top left, bottom right, 0 0, 0 0;
+	/* Animating the background positions with CSS3 */
+	/* Currently works only in Safari/Chrome */
+	-webkit-transition: background-position 1s;
+	-moz-transition: background-position 1s;
+	transition: background-position 1s;
+}
+
+/*
+ * 방이름 버튼
+ */
+.roombutton {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	margin-top: 5;
+	width: 18em;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(top, #42aaff 0%, #FE9A2E);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FE9A2E), to(#FE9A2E));
+	border: 1px solid #FE9A2E;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 1px
+		rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		1px rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 1px
+		rgba(255, 255, 255, 0.5);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.7), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+	border: 0;
+	outline: 0;
+}
+
+.roombutton:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	width: 18em;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(top, #848484 0%, #848484);
+	background: -webkit-gradient(linear, left top, left bottom, from(#848484), to(#848484));
+	border: 1px solid #848484;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 1px
+		rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		1px rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 1px
+		rgba(255, 255, 255, 0.5);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.7), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+	/* The first rule is a fallback, in case the browser
+	   does not support multiple backgrounds
+	*/
+	background-position: top left;
+	background-position: top left, bottom right, 0 0, 0 0;
+	/* Animating the background positions with CSS3 */
+	/* Currently works only in Safari/Chrome */
+	-webkit-transition: background-position 1s;
+	-moz-transition: background-position 1s;
+	transition: background-position 1s;
+}
+
+/*
+ * 방이름입력 텍스트
+ */
+.createCnt{
+	width: 14em;
+	text-align: center;
+	margin-top: 10;
+	font-size: 1.1em;
+	border-radius: 5px;
+	height: 32px;
+}
+
+
+

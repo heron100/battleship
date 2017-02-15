@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<meta name="viewport" content="width=device-width,user-scalable=0">
+	<title>WebSocket Chat</title>
+	<link rel="stylesheet" href="websocketclient.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="websocketclient.js"></script>
+	<script src="handler.js"></script>
+</head>
+<body>
+	<!-- 대기화면 -->
+	<div id="top"><br>
+		<h1>Battle Ship Game</h1>
+		<h1>해전</h1>
+		<!-- table id="userTable"><tr bgcolor="pink"><td>대기자</td></tr></table -->
+		
+		<table id="rmlistTable" class="boardlist">
+			<tr class="header">
+				<th>개설방</th>
+				<input type="hidden" id="enter"/>
+			</tr>
+		</table><br><br>
+	
+		<input type="text" id="room" placeholder="여기에 방이름을..." class="createCnt"></input>
+		<input class="css3button" type="button" id="makeRoom" value="방만들기"/>
+	</div>
+	
+	<!-- 게임화면-->
+	<div id="panel">
+		<div style="position: relative; z-index: 1;">
+			<canvas id="canvas"></canvas>
+		</div>
+		<div style="position: relative; left:10px; top: -125px; z-index: 2;">
+			<img alt="" src="img/bulletbtn.png" width="70" height="70" id="bullet">
+			<img alt="" src="img/movebtn_p.png" width="70" height="70" id="move">
+		</div>
+		<div style="position: relative; left:200px; top: -590px; z-index: 2;">
+			<img alt="" src="img/exit.png" width="170" height="70" id="outRoom"></img>
+		</div>
+	</div>
+</body>
+<script src="gameView.js"></script>
+</html>
